@@ -1,0 +1,57 @@
+# ``SplitBuddy``
+
+Welcome to the documentation for **SplitBuddy**, a bill-splitting application designed to make sharing costs easier for groups. This guide will walk you through the essential concepts, models, and tools provided by the app to help you understand and use it effectively.
+
+
+## Overview
+
+`SplitBuddy` is a SwiftUI app that allows users to create, manage, and split bills among people. It integrates various features such as handling different currencies, splitting bills either equally or by items, and offering seamless user experiences with SwiftUI. Below are the main models and views that drive the functionality of the app.
+
+### BillModel
+The `BillModel` class represents the overall structure of a bill, including the people, items (foods), and whether the bill is split equally or by items. It’s the backbone of the app's functionality.
+
+### HomeModel
+The `HomeModel` struct represents data that is shown on the home screen, providing users with key actions such as creating a bill, viewing history, and checking exchange rates.
+
+### FoodModel
+The `FoodModel` class holds the food items on a bill, including their names, prices, and any relevant relationships to the people who ordered them.
+
+### PeopleModel
+The `PeopleModel` class manages people involved in a bill, tracking their name, the amount they owe, and their relationship to the food items. It also handles the logic for splitting bills either equally or by items.
+
+
+## Topics
+
+- [Bill Splitting](../Resources/bill_splitting.md))
+- [Currency Conversion](../Resources/currency_conversion.md)
+- [Working with Food Models](../Resources/food_model.md)
+- [Handling People in a Bill](../Resources/people_model.md)
+- [Exchange Rate Tools](../Resources/exchange_rates.md)
+
+## Tutorials
+- [How to Split a Bill Equally](../Resources/split_equally_tutorial.md)
+- [How to Split a Bill by Items](../Resources/split_by_items_tutorial.md)
+- [How to Use Exchange Rates for Conversion](../Resources/exchange_rates_tutorial.md)
+
+## Tutorials
+### Bill Splitting
+`SplitBuddy` provides two main ways of splitting a bill:
+- **Equally**: Where the total amount is divided evenly among participants.
+- **By Items**: Where each person pays only for the food items they consumed.
+
+Explore these tutorials to learn how to manage bill splitting in different scenarios:
+- [How to Split a Bill Equally](../Resources/split_equally_tutorial.md)
+- [How to Split a Bill by Items](../Resources/split_by_items_tutorial.md)
+
+### Currency Conversion
+`SplitBuddy` supports multiple currencies and allows you to calculate the conversion between them. You can use the `ExchangeRatesTools` to fetch real-time exchange rates and convert amounts for people paying with different currencies.
+
+Learn more in the tutorial:
+- [How to Use Exchange Rates for Conversion](../Resources/exchange_rates_tutorial.md)
+
+
+- <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
+- ``BillModel``
+- ``HomeModel``
+- ``FoodModel``
+- ``PeopleModel``
